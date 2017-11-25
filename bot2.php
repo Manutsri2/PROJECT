@@ -2,7 +2,7 @@
 
 $xml=simplexml_load_file("book.xml") or die("Error: Cannot create object");
 $JAY = $xml->book[0]->title . $xml->book[0]->price . $xml->book[1]->title . $xml->book[3]->title;
-$Image = $xml->book[4]->title ;
+$JUNG = $xml->book[4]->title ;
 
 $strAccessToken = "7E/Ub3PcomIMFVemjLJKZJqTjiPo0LgEmKL3gybU+2i4JTe/rIDpOM21XcvHVfUCnfWS/nCsoaEdSbVpGL8J2yDmpXMmk4708xxB49wY/h2G6nMEQpPJHuMz5luKXg+g/p1LnRGQFoKX+mimkVLrsgdB04t89/1O/w1cDnyilFU=";
  
@@ -26,7 +26,7 @@ if($arrJson['events'][0]['message']['text'] == "1"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = $Image;
+  $arrPostData['messages'][0]['text'] = $JUNG;
 }else if($arrJson['events'][0]['message']['text'] == "ทำอะไรได้บ้าง"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
