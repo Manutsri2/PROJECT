@@ -23,11 +23,11 @@ if($arrJson['events'][0]['message']['text'] == "1"){
    
                                         
  
-}else if($arrJson['events'][0]['message']['text'] == "2"){
+}else if($arrJson['events'][0]['message']['text'] == "ใอ่เจ"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "JAY";
+  $arrPostData['messages'][0]['text'] = "คนหล่อที่สุดในจักรวาล";
 }else if($arrJson['events'][0]['message']['text'] == "ทำอะไรได้บ้าง"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
