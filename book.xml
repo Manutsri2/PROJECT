@@ -35,7 +35,7 @@
 </book>
   
 <book>
-   <src>https://www.picz.in.th/images/2017/11/25/cara.jpg</src>
+   <picture>https://www.picz.in.th/images/2017/11/25/cara.jpg</picture>
    <height> image height in pixels</height>
    <width> image width in pixels</width>
    <title> whatever title you want for the image</title>
