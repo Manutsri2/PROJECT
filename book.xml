@@ -34,11 +34,12 @@
   <price>39.95</price>
 </book>
   
-<book>
-   <picture>cara.jpg</picture>
-   <height> image height in pixels</height>
-   <width> image width in pixels</width>
-   <title> whatever title you want for the image</title>
+<book category="WEB">
+  <title lang="en">JAYJUNG</title>
+  <author>Erik T. Ray</author>
+  <year>2003</year>
+  <price>39.95</price>
 </book>
+  
 
 </bookstore>
