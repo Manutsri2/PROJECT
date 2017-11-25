@@ -1,8 +1,9 @@
 <?php
 
-$xml=simplexml_load_file("book.xml") or die("Error: Cannot create object");
+$xml1=simplexml_load_file("book.xml") or die("Error: Cannot create object");
+$xml2=simplexml_load_file("movie.xml") or die("Error: Cannot create object");
 $JAY = $xml->book[0]->title . $xml->book[0]->price . $xml->book[1]->title . $xml->book[3]->title;
-$JAY2 = $xml->book[0]->title . $xml->book[0]->price ;
+$JAY2 = $xml2->movie[0]->title . $xml2->movie[1]->title ;
 
 
 $strAccessToken = "7E/Ub3PcomIMFVemjLJKZJqTjiPo0LgEmKL3gybU+2i4JTe/rIDpOM21XcvHVfUCnfWS/nCsoaEdSbVpGL8J2yDmpXMmk4708xxB49wY/h2G6nMEQpPJHuMz5luKXg+g/p1LnRGQFoKX+mimkVLrsgdB04t89/1O/w1cDnyilFU=";
