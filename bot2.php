@@ -23,7 +23,7 @@ if($arrJson['events'][0]['message']['text'] == "1"){
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = $JAY;
     
-}else if($arrJson['events'][0]['message']['text'] == "2"){
+}else if($arrJson['events'][0]['message']['text'] == "Watcharit"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
