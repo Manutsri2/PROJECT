@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<moviestore>
+
+<movie category="action">
+  <title lang="en">Confidential Assignment</title>
+  <author>Korea</author>
+  <year>2017</year>
+  <price>30.00</price>
+</movie>
+
+<movie category="hero">
+  <title lang="en">Iron Man 1</title>
+  <author>Tony Stark</author>
+  <year>2008</year>
+  <price>30.00</price>
+</movie>
+
+<movie category="drama">
+  <title lang="en">The Shawnshank Redeption</title>
+  <author>Will Smith</author>
+  <year>1994</year>
+  <price>30.00</price>
+</movie>
+
+<movie category="comedy">
+  <title lang="en">Baby Sitter</title>
+  <author>Sexy</author>
+  <year>2017</year>
+  <price>30.00</price>
+</movie>
+
+<movie category="horror">
+  <title lang="en">Insidious Chapter 1</title>
+  <author>Larrent</author>
+  <year>2008</year>
+  <price>30.00</price>
+</movie>
+
+<movie category="thriller">
+  <title lang="en">HUSH</title>
+  <author>Unknows</author>
+  <year>2017</year>
+  <price>30.00</price>
+</movie>
+
+
+</moviestore>
