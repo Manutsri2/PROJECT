@@ -1,5 +1,7 @@
 <?php
- 
+
+$JAY = 1234;
+
 $strAccessToken = "7E/Ub3PcomIMFVemjLJKZJqTjiPo0LgEmKL3gybU+2i4JTe/rIDpOM21XcvHVfUCnfWS/nCsoaEdSbVpGL8J2yDmpXMmk4708xxB49wY/h2G6nMEQpPJHuMz5luKXg+g/p1LnRGQFoKX+mimkVLrsgdB04t89/1O/w1cDnyilFU=";
  
 $content = file_get_contents('php://input');
@@ -15,11 +17,7 @@ if($arrJson['events'][0]['message']['text'] == "1"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = $xml=simplexml_load_file("book.xml") or die("Error: Cannot create object");
-										echo $xml->book[0]->title . "<br>";
-										echo $xml->book[0]->price . "<br>";
-										echo $xml->book[1]->title . "<br>";
-										echo $xml->book[3]->title . "<br>";
+  $arrPostData['messages'][0]['text'] = $JAY;
 }else if($arrJson['events'][0]['message']['text'] == "2"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
