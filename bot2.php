@@ -2,7 +2,7 @@
 
 $xml1=simplexml_load_file("book.xml") or die("Error: Cannot create object");
 $xml2=simplexml_load_file("movie.xml") or die("Error: Cannot create object");
-$JAY = $xml->book[0]->title . $xml->book[0]->price . $xml->book[1]->title . $xml->book[3]->title;
+$JAY = $xml1->book[0]->title . $xml1->book[0]->price . $xml1->book[1]->title . $xml1->book[3]->title;
 $JAY2 = $xml2->movie[0]->title . $xml2->movie[1]->title ;
 
 
