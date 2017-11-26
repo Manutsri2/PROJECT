@@ -34,8 +34,8 @@ if (!is_null($events['events'])) {
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => 'https://www.img.in.th/images/b209a181a8ce1795293c2db6a00fea81.jpg',
-    				'previewImageUrl' => 'https://www.img.in.th/images/bdc34cc73e7a0e069ef439ddd8709348.jpg'
+    				'originalContentUrl' => 'https://photos.app.goo.gl/UnofDx7md8N21Okt1',
+    				'previewImageUrl' => 'https://photos.app.goo.gl/oa5iIw8D9Fm6FZNw1'
 				
 				];
 				
