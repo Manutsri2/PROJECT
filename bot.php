@@ -34,8 +34,8 @@ if (!is_null($events['events'])) {
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => 'https://ibb.co/hcKQoR',
-    				'previewImageUrl' => 'https://ibb.co/h36ANm'
+    				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/day1.jpg',
+    				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/day2.jpg'
 				
 				];
 				
@@ -53,8 +53,8 @@ if (!is_null($events['events'])) {
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => 'https://www.img.in.th/images/67f41fd78ebd427067b771faf2e8daf2.jpg',
-    				'previewImageUrl' => 'https://www.img.in.th/images/ae3d1a2c3d6c236301388d3758714a0c.jpg'
+    				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/space1.jpg',
+    				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/space2.jpg'
 				
 				];
 			}
