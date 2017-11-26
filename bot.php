@@ -27,24 +27,44 @@ if (!is_null($events['events'])) {
 				[
 				
     				'type' => 'text',
-    				'text' => 'JAYJUNG'
+    				'text' => 'กำหนดการและสถานที่รายงานตัวฝึกซ้อมและวันรับปริญญาบัตร'
 				
 				];
 			$messages2 = 
 				[
 				
-    				'type' => 'text',
-    				'text' => 'WATCHARIT'
+				'type' => 'image',
+    				'originalContentUrl' => 'https://www.img.in.th/images/b209a181a8ce1795293c2db6a00fea81.jpg',
+    				'previewImageUrl' => 'https://www.img.in.th/images/bdc34cc73e7a0e069ef439ddd8709348.jpg'
 				
 				];
 				
 			}
-			else{
+			else if($text == "2")
+			{
 			$messages = 
 				[
 				
     				'type' => 'text',
-    				'text' => 'การแต่งกาย'
+    				'text' => 'สถานที่ฝึกซ้อมย่อยและถ่ายรูปหมู่'
+				
+				];
+			$messages2 =
+				[
+				
+				'type' => 'image',
+    				'originalContentUrl' => 'https://www.img.in.th/images/67f41fd78ebd427067b771faf2e8daf2.jpg',
+    				'previewImageUrl' => 'https://www.img.in.th/images/ae3d1a2c3d6c236301388d3758714a0c.jpg'
+				
+				];
+			}
+			else if($text == "3")
+			{
+			$messages = 
+				[
+				
+    				'type' => 'text',
+    				'text' => 'การแต่งกายของบัณฑิต'
 				
 				];
 			$messages2 =
@@ -53,6 +73,74 @@ if (!is_null($events['events'])) {
 				'type' => 'image',
     				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung1.jpg',
     				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung2.jpg'
+				
+				];
+			}
+			else if($text == "4")
+			{
+			$messages = 
+				[
+				
+    				'type' => 'text',
+    				'text' => 'ระบบภาวะการมีงานทำ'
+				
+				];
+			$messages2 =
+				[
+				
+				'type' => 'text',
+    				'text' => 'http://graduate.rmutsv.ac.th/2560/?q=th/studentwork'
+				
+				];
+			}
+			else if($text == "000")
+			{
+			$messages = 
+				[
+				
+    				'type' => 'text',
+    				'text' => 'ระบบภาวะการมีงานทำ'
+				
+				];
+			$messages2 =
+				[
+				
+				'type' => 'text',
+    				'text' => 'โทร. 090-000-0000'
+				
+				];
+			}
+			else if($text == "?")
+			{
+			$messages = 
+				[
+				
+    				'type' => 'text',
+    				'text' => 'กรุณาพิมพ์ตัวเลขต่างๆ ที่ปรากฏด้านล่าง เพื่อสอบถามข้อมูลที่ท่านต้องการทราบำ'
+				
+				];
+			$messages2 =
+				[
+				
+				'type' => 'text',
+    				'text' => '1 = กำหนดการและสถานที่รายงานตัวฝึกซ้อมและวันรับปริญญาบัตร	2 = สถานที่ฝึกซ้อมย่อยและถ่ายรูปหมู่	3 = การแต่งกายของบัณฑิต		4 = ตรวจสอบตำแหน่งที่นั่งของบัณฑิต	5 = ระบบภาวะการมีงานทำ'
+				
+				];
+			}
+			else
+			{
+			$messages = 
+				[
+				
+    				'type' => 'text',
+    				'text' => 'ไม่มีข้อมูลที่ท่านสอบถาม'
+				
+				];
+			$messages2 =
+				[
+				
+				'type' => 'text',
+    				'text' => 'หากต้องการสอบถามข้อมูลอีกครั้งท่านสามารถพิมพ์ ?'
 				
 				];
 			}
