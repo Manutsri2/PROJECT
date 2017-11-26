@@ -24,8 +24,10 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				
-				'type' => 'text',
-				'text' => 'JAYJUNG'
+				{'type' => 'text',
+				'text' => 'JAYJUNG'},
+				{'type2' => 'text2',
+				'text2' => 'SUKSIKARN'}
 				
 			];}
 			else{
