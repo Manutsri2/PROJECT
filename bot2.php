@@ -22,7 +22,7 @@ if($arrJson['events'][0]['message']['text'] == "1"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = $obj1.?> <?php echo "<br>";?><?php.$obj2;
+  $arrPostData['messages'][0]['text'] = $obj1.$obj2;
     
 }else if($arrJson['events'][0]['message']['text'] == "2"){
   $arrPostData = array();
