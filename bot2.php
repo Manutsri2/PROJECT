@@ -1,9 +1,9 @@
 <?php
 
 $xml1=simplexml_load_file("graduate.xml") or die("Error: Cannot create object");
-$xml2=simplexml_load_file("movie.xml") or die("Error: Cannot create object");
+//$xml2=simplexml_load_file("movie.xml") or die("Error: Cannot create object");
 $obj1 = $xml1->object[0]->title."                                                                              ".$xml1->object[0]->image;
-$JAY2 = $xml2->movie[0]->title . " หมูอ้วน " .$xml2->movie[1]->title ;
+$obj2 = $xml1->object[1]->title ."          ".$xml1->object[1]->text1."          ".xml1->object[1]->text2."          ".xml1->object[1]->text3;
 
 
 $strAccessToken = "7E/Ub3PcomIMFVemjLJKZJqTjiPo0LgEmKL3gybU+2i4JTe/rIDpOM21XcvHVfUCnfWS/nCsoaEdSbVpGL8J2yDmpXMmk4708xxB49wY/h2G6nMEQpPJHuMz5luKXg+g/p1LnRGQFoKX+mimkVLrsgdB04t89/1O/w1cDnyilFU=";
