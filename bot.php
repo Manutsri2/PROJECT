@@ -47,13 +47,13 @@ if (!is_null($events['events'])) {
     				'text' => 'การแต่งกาย'
 				
 				];
-				/*
+			$messages2 =
 				[
-				'type' => 'image',
+				/*'type' => 'image',
     				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung1.jpg',
     				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung2.jpg'
-				
-				];*/
+				*/
+				];
 			}
 
 			// Make a POST Request to Messaging API to reply to sender
