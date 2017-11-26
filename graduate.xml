@@ -3,7 +3,8 @@
 <graduate>
 
 <object>
-  <title lang="en">กำหนดการและสถานที่รายงานตัวฝึกซ้อมและวันรับปริญญาบัตร</title>
+  <title lang="en">กำหนดการและสถานที่รายงานตัว</title>
+  <intro>ฝึกซ้อมและวันรับปริญญาบัตร</intro>
   <image>https://www.picz.in.th/images/2017/11/26/object1.jpg</image>
 </object>
 
@@ -11,5 +12,22 @@
   <title lang="en">สถานที่ฝึกซ้อมย่อยและถ่ายรูปหมู่</title>
   <image>http://graduate.rmutsv.ac.th/2560/sites/graduate.rmutsv.ac.th.2560/files/img/2017-08-29_17-15-05.jpg</image>
 </object>
+  
+<object>
+  <title lang="en">การแต่งกายของบัณฑิต</title>
+  <image>http://graduate.rmutsv.ac.th/2560/sites/graduate.rmutsv.ac.th.2560/files/img/2017-08-29_17-15-05.jpg</image>
+</object>
+ 
+<object>
+  <title lang="en">ตรวจสอบตำแหน่งที่นั่งของบัณฑิต</title>
+  <image>http://graduate.rmutsv.ac.th/2560/sites/graduate.rmutsv.ac.th.2560/files/img/2017-08-29_17-15-05.jpg</image>
+</object>
+  
+<object>
+  <title lang="en">ระบบภาวะการมีงานทำ</title>
+  <image>http://graduate.rmutsv.ac.th/2560/?q=th/studentwork</image>
+</object>
+  
+  การแต่งกายของบัณฑิต
 
 </graduate>
