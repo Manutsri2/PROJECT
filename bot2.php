@@ -1,6 +1,6 @@
 <?php
 
-$Space = echo "<br><br>";
+//$Space = echo "<br><br>";
 
 $xml1=simplexml_load_file("graduate.xml") or die("Error: Cannot create object");
 $xml2=simplexml_load_file("movie.xml") or die("Error: Cannot create object");
