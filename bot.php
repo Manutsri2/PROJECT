@@ -34,8 +34,8 @@ if (!is_null($events['events'])) {
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => 'http://up.gunhotnews.com/?img=41511724449.jpg',
-    				'previewImageUrl' => 'http://up.gunhotnews.com/?img=121511724516.jpg'
+    				'originalContentUrl' => 'https://image.goosiam.com/view.asp?uid=466891&s=1QJPHRMQ2jFh',
+    				'previewImageUrl' => 'https://image.goosiam.com/view.asp?uid=466892&s=KkwNIK3T5DDq'
 				
 				];
 				
