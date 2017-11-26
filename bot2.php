@@ -2,8 +2,7 @@
 
 $xml1=simplexml_load_file("graduate.xml") or die("Error: Cannot create object");
 $xml2=simplexml_load_file("movie.xml") or die("Error: Cannot create object");
-$obj1 = $xml1->object[0]->title;
-$obj1_1 = $xml1->object[0]->image;
+$obj1 = $xml1->object[0]->title.echo "<br>".$xml1->object[0]->image;
 $JAY2 = $xml2->movie[0]->title . " หมูอ้วน " .$xml2->movie[1]->title ;
 
 
@@ -24,8 +23,6 @@ if($arrJson['events'][0]['message']['text'] == "1"){
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = $obj1;
-  echo "<br>";
-  $arrPostData['messages'][0]['text'] = $obj1_1;
     
 }else if($arrJson['events'][0]['message']['text'] == "2"){
   $arrPostData = array();
