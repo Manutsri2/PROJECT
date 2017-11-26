@@ -1,8 +1,10 @@
 <?php
 
+$Space = echo "<br><br>";
+
 $xml1=simplexml_load_file("graduate.xml") or die("Error: Cannot create object");
 $xml2=simplexml_load_file("movie.xml") or die("Error: Cannot create object");
-$JAY = $xml1->object[0]->title ."<br><br>".$xml1->object[0]->image;
+$JAY = $xml1->object[0]->title . $Space .$xml1->object[0]->image;
 $JAY2 = $xml2->movie[0]->title . " หมูอ้วน " .$xml2->movie[1]->title ;
 
 
