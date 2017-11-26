@@ -25,11 +25,11 @@ if (!is_null($events['events'])) {
 			$messages = [
 				{
 				'type' => 'text',
-				'text' => "JAYJUNG"
+				'text' => 'JAYJUNG'
 				},
 				{
 				'type' => 'text',
-				'text' => "WATCHARIT"
+				'text' => 'WATCHARIT'
 				}
 			];
 
