@@ -32,8 +32,8 @@ if (!is_null($events['events'])) {
 			$messages = [
 				
 				'type' => 'image',
-    				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/test1.jpg',
-    				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/test2.jpg'
+    				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung1.jpg',
+    				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung2.jpg'
 				
 			];}
 
