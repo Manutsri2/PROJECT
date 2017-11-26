@@ -34,7 +34,7 @@ if (!is_null($events['events'])) {
 				[
 				
     				'type' => 'text',
-    				'text' => 'JAYJUNG'
+    				'text' => 'WATCHARIT'
 				
 				];
 			}
