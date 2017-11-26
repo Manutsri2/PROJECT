@@ -49,10 +49,11 @@ if (!is_null($events['events'])) {
 				];
 			$messages2 =
 				[
-				/*'type' => 'image',
+				
+				'type' => 'image',
     				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung1.jpg',
     				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung2.jpg'
-				*/
+				
 				];
 			}
 
