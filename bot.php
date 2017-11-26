@@ -26,8 +26,6 @@ if (!is_null($events['events'])) {
 				
     				'type' => 'text',
     				'text' => 'JAYJUNG'
-				'type' => 'text',
-    				'text' => 'SUKSIKARN'
 				
 			];}
 			else{
