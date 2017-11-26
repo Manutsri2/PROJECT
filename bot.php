@@ -34,8 +34,8 @@ if (!is_null($events['events'])) {
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => 'https://image.goosiam.com/view.asp?uid=466891&s=1QJPHRMQ2jFh',
-    				'previewImageUrl' => 'https://image.goosiam.com/view.asp?uid=466892&s=KkwNIK3T5DDq'
+    				'originalContentUrl' => 'https://ibb.co/hcKQoR',
+    				'previewImageUrl' => 'https://ibb.co/h36ANm'
 				
 				];
 				
