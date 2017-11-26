@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<rss version="2.0">
 <graduate>
 
+<image>
+     <url>https://www.w3schools.com/images/w3schools_green.jpg</url>
+     <title>W3Schools.com</title>
+     <link>https://www.w3schools.com</link>
+</image>
+  
 <object>
   <title lang="en">กำหนดการและสถานที่รายงานตัวฝึกซ้อมและวันรับปริญญาบัตร</title>
   <image>https://www.picz.in.th/images/2017/11/26/object1.jpg</image>
@@ -32,3 +38,4 @@
   การแต่งกายของบัณฑิต
 
 </graduate>
+</rss>
