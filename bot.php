@@ -23,10 +23,14 @@ if (!is_null($events['events'])) {
 			if($text == "1"){
 			// Build message to reply back
 			$messages = [
-				
-    					'type' => 'text',
-    					'text' => 'Hello, world'
-				
+				[
+    				'type' => 'text',
+    				'text' => 'Hello, world'
+				],
+				[
+				'type' => 'text',
+    				'text' => 'JAYJUNG'	
+				]
 			];}
 			else{
 			$messages = [
