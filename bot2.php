@@ -2,7 +2,7 @@
 
 $xml1=simplexml_load_file("graduate.xml") or die("Error: Cannot create object");
 
-$obj1 = $xml1->object[0]->title.$xml1->object[0]->intro ?><?php$xml1->object[0]->image.$xml1->object[0]->image2;
+$obj1 = $xml1->object[0]->title.$xml1->object[0]->intro.$xml1->object[0]->image.$xml1->object[0]->image2;
 $obj2 = $xml1->object[1]->title."                                                                              ".$xml1->object[1]->image;
 
 
