@@ -38,7 +38,7 @@ if (!is_null($events['events'])) {
     				'text' => 'การแต่งกาย'
 				
 				]
-				+
+				.
 				]
 				'type' => 'image',
     				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung1.jpg',
