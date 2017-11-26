@@ -23,7 +23,14 @@ if (!is_null($events['events'])) {
 			if($text == "1")
 			{
 			// Build message to reply back
-			$messages = 
+			$messages1 = 
+				[
+				
+    				'type' => 'text',
+    				'text' => 'JAYJUNG'
+				
+				];
+			$messages2 = 
 				[
 				
     				'type' => 'text',
@@ -34,24 +41,25 @@ if (!is_null($events['events'])) {
 			else{
 			$messages = 
 				[
-				{
+				
     				'type' => 'text',
     				'text' => 'การแต่งกาย'
-				}
-				,
-				{
+				
+				];
+				/*
+				[
 				'type' => 'image',
     				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung1.jpg',
     				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung2.jpg'
-				}
-				];
+				
+				];*/
 			}
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages],[$messages]
+				'messages' => [$messages1],[$messages2]
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
