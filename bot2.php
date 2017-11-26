@@ -3,7 +3,7 @@
 $xml1=simplexml_load_file("graduate.xml") or die("Error: Cannot create object");
 //$xml2=simplexml_load_file("movie.xml") or die("Error: Cannot create object");
 $obj1 = $xml1->object[0]->title."                                                                              ".$xml1->object[0]->image;
-$obj2 = $xml1->object[1]->title ."          ".$xml1->object[1]->text1."          ".$xml1->object[1]->text2."          ".$xml1->object[1]->text3;
+$obj2 = $xml1->object[1]->title;
 
 
 $strAccessToken = "7E/Ub3PcomIMFVemjLJKZJqTjiPo0LgEmKL3gybU+2i4JTe/rIDpOM21XcvHVfUCnfWS/nCsoaEdSbVpGL8J2yDmpXMmk4708xxB49wY/h2G6nMEQpPJHuMz5luKXg+g/p1LnRGQFoKX+mimkVLrsgdB04t89/1O/w1cDnyilFU=";
@@ -23,6 +23,11 @@ if($arrJson['events'][0]['message']['text'] == "1"){
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = $obj1;
+  echo "<br>";
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = $obj2;
     
 }else if($arrJson['events'][0]['message']['text'] == "2"){
   $arrPostData = array();
