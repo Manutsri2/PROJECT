@@ -23,12 +23,13 @@ if (!is_null($events['events'])) {
 			if($text == "1")
 			{
 			// Build message to reply back
-			$messages = [
+			$messages = 
+				[
 				
     				'type' => 'text',
     				'text' => 'JAYJUNG'
 				
-			];
+				];
 			}
 			else{
 			$messages = 
@@ -37,14 +38,14 @@ if (!is_null($events['events'])) {
     				'type' => 'text',
     				'text' => 'การแต่งกาย'
 				
-				]
-				.
+				];
+				/*
 				]
 				'type' => 'image',
     				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung1.jpg',
     				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung2.jpg'
 				
-				];
+				];*/
 			}
 
 			// Make a POST Request to Messaging API to reply to sender
