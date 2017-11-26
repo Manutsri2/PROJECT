@@ -1,6 +1,6 @@
 <?php
 $access_token = '7E/Ub3PcomIMFVemjLJKZJqTjiPo0LgEmKL3gybU+2i4JTe/rIDpOM21XcvHVfUCnfWS/nCsoaEdSbVpGL8J2yDmpXMmk4708xxB49wY/h2G6nMEQpPJHuMz5luKXg+g/p1LnRGQFoKX+mimkVLrsgdB04t89/1O/w1cDnyilFU=';
-
+$JAY = "วัชริศ";
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => $JAY
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
