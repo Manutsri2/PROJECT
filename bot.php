@@ -10,9 +10,6 @@ $announce = $doc->getElementsByTagName('graduate');
 $obj1 = $announce->item(0)->getElementsByTagName('title')->item(0)->nodeValue;
 $obj1_1 = $announce->item(0)->getElementsByTagName('pic1')->item(0)->nodeValue;
 $obj1_2 = $announce->item(0)->getElementsByTagName('pic2')->item(0)->nodeValue;
-$obj2 = $announce->item(1)->getElementsByTagName('title')->item(0)->nodeValue;
-$obj2_1 = $announce->item(1)->getElementsByTagName('pic1')->item(0)->nodeValue;
-$obj2_2 = $announce->item(1)->getElementsByTagName('pic2')->item(0)->nodeValue;
 
 // Get POST body content
 $content = file_get_contents('php://input');
