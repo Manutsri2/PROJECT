@@ -4,9 +4,9 @@ $access_token = '7E/Ub3PcomIMFVemjLJKZJqTjiPo0LgEmKL3gybU+2i4JTe/rIDpOM21XcvHVfU
 
 $xml1 = simplexml_load_file("graduate.xml") or die("Error: Cannot create object");
 
-$obj1 = $xml1->object[0]->title.$xml1->object[0]->sp;
-$obj1_1 = $xml1->object[0]->pic1.$xml1->object[0]->sp;
-$obj1_2 = $xml1->object[0]->pic2.$xml1->object[0]->sp;
+$obj1 = $xml1->object[0]->title;
+$obj1_1 = $xml1->object[0]->pic1;
+$obj1_2 = $xml1->object[0]->pic2;
 
 // Get POST body content
 $content = file_get_contents('php://input');
