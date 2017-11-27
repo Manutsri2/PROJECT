@@ -55,7 +55,7 @@ if (!is_null($events['events'])) {
 				[
 				
     				'type' => 'text',
-    				'text' => $obj2
+    				'text' => $obj1
 				
 				];
 			$messages2 = 
