@@ -46,26 +46,28 @@ if (!is_null($events['events'])) {
 				
 			}
 			else if($text == "2")
-			{	
+			{
 			$k = 1;
-			$obj2 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
-			$obj2_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
-			$obj2_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
+			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
+			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
+			$obj1_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
+			// Build message to reply back
 			$messages = 
 				[
 				
     				'type' => 'text',
-    				'text' => $obj2
+    				'text' => $obj1
 				
 				];
-			$messages2 =
+			$messages2 = 
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => $obj2_1,
-    				'previewImageUrl' => $obj2_2
+    				'originalContentUrl' => $obj1_1,
+    				'previewImageUrl' => $obj1_2
 				
 				];
+				
 			}
 			else if($text == "3")
 			{
