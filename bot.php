@@ -5,11 +5,7 @@ $access_token = '7E/Ub3PcomIMFVemjLJKZJqTjiPo0LgEmKL3gybU+2i4JTe/rIDpOM21XcvHVfU
 $doc = new DomDocument;
 $doc->validateOnParse = true;
 $doc->Load('graduate.xml');
-$announce = $doc->getElementsByTagName('graduate');
-
-$obj1 = $announce->item(0)->getElementsByTagName('title')->item(0)->nodeValue;
-$obj1_1 = $announce->item(0)->getElementsByTagName('pic1')->item(0)->nodeValue;
-$obj1_2 = $announce->item(0)->getElementsByTagName('pic2')->item(0)->nodeValue;
+$announce = $doc->getElementsByTagName('object');
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -27,6 +23,10 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			if($text == "1")
 			{
+			$k = 0;
+			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
+			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
+			$obj1_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
 			// Build message to reply back
 			$messages = 
 				[
@@ -47,6 +47,10 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "2")
 			{
+			$k = 1;
+			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
+			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
+			$obj1_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
 			$messages = 
 				[
 				
@@ -58,8 +62,8 @@ if (!is_null($events['events'])) {
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => $obj2_1,
-    				'previewImageUrl' => $obj2_2
+    				'originalContentUrl' => $obj1_1,
+    				'previewImageUrl' => $obj1_2
 				
 				];
 				
@@ -95,7 +99,7 @@ if (!is_null($events['events'])) {
 				[
 				
 				'type' => 'text',
-    				'text' => $obj1_1
+    				'text' => $obj1_3
 				
 				];
 			}
