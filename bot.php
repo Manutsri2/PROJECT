@@ -47,6 +47,10 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "2")
 			{
+			$doc = new DomDocument;
+			$doc->validateOnParse = true;
+			$doc->Load('graduate.xml');
+			$announce = $doc->getElementsByTagName('graduate');
 			$k = 1;
 			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
 			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
