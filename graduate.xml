@@ -4,10 +4,35 @@
 
 <object>
   <title lang="en">1.กำหนดการและสถานที่รายงานตัวฝึกซ้อมและวันรับปริญญาบัตร</title>
-  <intro>JAYJUNG</intro>
   <pic1>https://www.picz.in.th/images/2017/11/27/day1.jpg</pic1>
   <pic2>https://www.picz.in.th/images/2017/11/27/day2.jpg</pic2>
-  <sp> </sp>
+</object>
+  
+<object>
+  <title lang="en">2.สถานที่ฝึกซ้อมย่อยและถ่ายรูปหมู่</title>
+  <pic1>https://www.picz.in.th/images/2017/11/27/space1.jpg</pic1>
+  <pic2>https://www.picz.in.th/images/2017/11/27/space2.jpg</pic2>
+</object>
+  
+<object>
+  <title lang="en">3.การแต่งกายของบัณฑิต</title>
+  <pic1>https://www.picz.in.th/images/2017/11/27/jayjung1.jpg</pic1>
+  <pic2>https://www.picz.in.th/images/2017/11/27/jayjung2.jpg</pic2>
+</object>
+  
+<object>
+  <title lang="en">4.ระบบภาวะการมีงานทำ</title>
+  <way>http://graduate.rmutsv.ac.th/2560/?q=th/studentwork</way>
+</object>
+  
+<object>
+  <title lang="en">ติดต่อเจ้าหน้าที่</title>
+  <tel>โทร. 090-000-0000</tel>
+</object>
+  
+<object>
+  <title lang="en">กรุณาพิมพ์ตัวเลขต่างๆ ที่ปรากฏด้านล่าง เพื่อสอบถามข้อมูลที่ท่านต้องการทราบ</title>
+  <deta>1=กำหนดการและสถานที่รายงานตัวฝึกซ้อมและวันรับปริญญาบัตร 2=สถานที่ฝึกซ้อมย่อยและถ่ายรูปหมู่ 3=การแต่งกายของบัณฑิต 4=ระบบภาวะการมีงานทำ 000=ติดต่อเจ้าหน้าที่</deta>
 </object>
 
 </graduate>
