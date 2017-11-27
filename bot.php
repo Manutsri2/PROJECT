@@ -1,10 +1,12 @@
 <?php
+
 $access_token = '7E/Ub3PcomIMFVemjLJKZJqTjiPo0LgEmKL3gybU+2i4JTe/rIDpOM21XcvHVfUCnfWS/nCsoaEdSbVpGL8J2yDmpXMmk4708xxB49wY/h2G6nMEQpPJHuMz5luKXg+g/p1LnRGQFoKX+mimkVLrsgdB04t89/1O/w1cDnyilFU=';
 
 $xml1 = simplexml_load_file("graduate.xml") or die("Error: Cannot create object");
 
 $obj1 = $xml1->object[0]->title.$xml1->object[0]->sp;
-$JAY = "วัชริศ";
+$obj1_1 = $xml1->object[0]->pic1.$xml1->object[0]->sp;
+$obj1_2 = $xml1->object[0]->pic2.$xml1->object[0]->sp;
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -27,15 +29,15 @@ if (!is_null($events['events'])) {
 				[
 				
     				'type' => 'text',
-    				'text' => '1.กำหนดการและสถานที่รายงานตัวฝึกซ้อมและวันรับปริญญาบัตร'
+    				'text' => $obj1
 				
 				];
 			$messages2 = 
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/day1.jpg',
-    				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/day2.jpg'
+    				'originalContentUrl' => $obj1_1,
+    				'previewImageUrl' => $obj1_2
 				
 				];
 				
