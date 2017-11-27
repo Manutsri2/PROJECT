@@ -40,7 +40,7 @@ if (!is_null($events['events'])) {
 				
 				'type' => 'image',
     				'originalContentUrl' => $obj1_1,
-    				'previewImageUrl' => $obj1_2'
+    				'previewImageUrl' => $obj1_2
 				
 				];
 				
