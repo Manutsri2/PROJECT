@@ -25,6 +25,8 @@ if (!is_null($events['events'])) {
 			{
 			$k = 0;
 			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
+			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
+			$obj1_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
 			// Build message to reply back
 			$messages = 
 				[
@@ -37,8 +39,8 @@ if (!is_null($events['events'])) {
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/day1.jpg',
-    				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/day2.jpg'
+    				'originalContentUrl' => $obj1_1,
+    				'previewImageUrl' => $obj1_2'
 				
 				];
 				
