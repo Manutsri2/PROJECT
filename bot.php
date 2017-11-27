@@ -69,10 +69,6 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "3")
 			{
-			$k = 2;
-			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
-			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
-			$obj1_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
 			$messages = 
 				[
 				
@@ -91,9 +87,6 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "4")
 			{
-			$k = 3;
-			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
-			$obj1_1 = $announce->item($k)->getElementsByTagName('way')->item(0)->nodeValue;
 			$messages = 
 				[
 				
@@ -111,9 +104,6 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "000")
 			{
-			$k = 4;
-			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
-			$obj1_1 = $announce->item($k)->getElementsByTagName('tel')->item(0)->nodeValue;
 			$messages = 
 				[
 				
@@ -131,9 +121,6 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "?")
 			{
-			$k = 5;
-			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
-			$obj1_1 = $announce->item($k)->getElementsByTagName('deta')->item(0)->nodeValue;
 			$messages = 
 				[
 				
