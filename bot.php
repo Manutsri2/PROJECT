@@ -48,22 +48,22 @@ if (!is_null($events['events'])) {
 			else if($text == "2")
 			{	
 			$k = 1;
-			$obj1 = $announce->item($k)->getElementsByTagName('intro')->item(0)->nodeValue;
-			$obj1_1 = $announce->item($k)->getElementsByTagName('photo1')->item(0)->nodeValue;
-			$obj1_2 = $announce->item($k)->getElementsByTagName('photo2')->item(0)->nodeValue;
+			$obj2 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
+			$obj2_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
+			$obj2_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
 			$messages = 
 				[
 				
     				'type' => 'text',
-    				'text' => $obj1
+    				'text' => $obj2
 				
 				];
 			$messages2 =
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => $obj1_1,
-    				'previewImageUrl' => $obj1_2
+    				'originalContentUrl' => $obj2_1,
+    				'previewImageUrl' => $obj2_2
 				
 				];
 			}
