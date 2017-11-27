@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 			if($text == "1")
 			{
 			$k = 0;
-			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue."<br>";
+			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue.'<br>';
 			$obj2 = $announce->item($k)->getElementsByTagName('intro')->item(0)->nodeValue;
 			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
 			$obj1_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
