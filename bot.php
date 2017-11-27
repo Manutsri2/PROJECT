@@ -2,11 +2,10 @@
 
 $access_token = '7E/Ub3PcomIMFVemjLJKZJqTjiPo0LgEmKL3gybU+2i4JTe/rIDpOM21XcvHVfUCnfWS/nCsoaEdSbVpGL8J2yDmpXMmk4708xxB49wY/h2G6nMEQpPJHuMz5luKXg+g/p1LnRGQFoKX+mimkVLrsgdB04t89/1O/w1cDnyilFU=';
 
-$xml1 = simplexml_load_file("graduate.xml") or die("Error: Cannot create object");
-
-$obj1 = $xml1->object[0]->title;
-$obj1_1 = $xml1->object[0]->pic1;
-$obj1_2 = $xml1->object[0]->pic2;
+$doc = new DomDocument;
+$doc->validateOnParse = true;
+$doc->Load('graduate.xml');
+$announce = $doc->getElementsByTagName('graduate');
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -24,6 +23,8 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			if($text == "1")
 			{
+			$k = 0;
+			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
 			// Build message to reply back
 			$messages = 
 				[
@@ -36,8 +37,8 @@ if (!is_null($events['events'])) {
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => $obj1_1,
-    				'previewImageUrl' => $obj1_2
+    				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/day1.jpg',
+    				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/day2.jpg'
 				
 				];
 				
