@@ -2,11 +2,6 @@
 
 $access_token = '7E/Ub3PcomIMFVemjLJKZJqTjiPo0LgEmKL3gybU+2i4JTe/rIDpOM21XcvHVfUCnfWS/nCsoaEdSbVpGL8J2yDmpXMmk4708xxB49wY/h2G6nMEQpPJHuMz5luKXg+g/p1LnRGQFoKX+mimkVLrsgdB04t89/1O/w1cDnyilFU=';
 
-$doc = new DomDocument;
-$doc->validateOnParse = true;
-$doc->Load('graduate.xml');
-$announce = $doc->getElementsByTagName('graduate');
-
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -23,6 +18,10 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			if($text == "1")
 			{
+			$doc = new DomDocument;
+			$doc->validateOnParse = true;
+			$doc->Load('graduate.xml');
+			$announce = $doc->getElementsByTagName('graduate');
 			$k = 0;
 			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
 			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
@@ -47,6 +46,10 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "2")
 			{
+			$doc = new DomDocument;
+			$doc->validateOnParse = true;
+			$doc->Load('graduate.xml');
+			$announce = $doc->getElementsByTagName('graduate');	
 			$k = 1;
 			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
 			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
@@ -69,6 +72,10 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "3")
 			{
+			$doc = new DomDocument;
+			$doc->validateOnParse = true;
+			$doc->Load('graduate.xml');
+			$announce = $doc->getElementsByTagName('graduate');
 			$k = 2;
 			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
 			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
@@ -91,6 +98,10 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "4")
 			{
+			$doc = new DomDocument;
+			$doc->validateOnParse = true;
+			$doc->Load('graduate.xml');
+			$announce = $doc->getElementsByTagName('graduate');
 			$k = 3;
 			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
 			$obj1_1 = $announce->item($k)->getElementsByTagName('way')->item(0)->nodeValue;
@@ -111,6 +122,10 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "000")
 			{
+			$doc = new DomDocument;
+			$doc->validateOnParse = true;
+			$doc->Load('graduate.xml');
+			$announce = $doc->getElementsByTagName('graduate');
 			$k = 4;
 			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
 			$obj1_1 = $announce->item($k)->getElementsByTagName('tel')->item(0)->nodeValue;
@@ -131,6 +146,10 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "?")
 			{
+			$doc = new DomDocument;
+			$doc->validateOnParse = true;
+			$doc->Load('graduate.xml');
+			$announce = $doc->getElementsByTagName('graduate');
 			$k = 5;
 			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
 			$obj1_1 = $announce->item($k)->getElementsByTagName('deta')->item(0)->nodeValue;
