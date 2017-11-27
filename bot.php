@@ -134,7 +134,11 @@ if (!is_null($events['events'])) {
 			{
 			$k = 5;
 			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
-			$obj1_1 = $announce->item($k)->getElementsByTagName('deta')->item(0)->nodeValue;
+			$obj1_1 = $announce->item($k)->getElementsByTagName('deta1')->item(0)->nodeValue;
+			$obj1_2 = $announce->item($k)->getElementsByTagName('deta2')->item(0)->nodeValue;
+			$obj1_3 = $announce->item($k)->getElementsByTagName('deta3')->item(0)->nodeValue;
+			$obj1_4 = $announce->item($k)->getElementsByTagName('deta4')->item(0)->nodeValue;
+			$obj1_5 = $announce->item($k)->getElementsByTagName('deta5')->item(0)->nodeValue;
 			$messages = 
 				[
 				
@@ -146,7 +150,7 @@ if (!is_null($events['events'])) {
 				[
 				
 				'type' => 'text',
-    				'text' => $obj1_1
+    				'text' => $obj1_1."\n".$obj1_2."\n".$obj1_3."\n".$obj1_4."\n".$obj1_5
 				
 				];
 			}
