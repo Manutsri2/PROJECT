@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
 				[
 				
     				'type' => 'text',
-    				'text' => $obj.\n.$obj
+    				'text' => $obj."\n".$obj
 				
 				];
 			$messages2 = 
