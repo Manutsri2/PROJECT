@@ -24,8 +24,7 @@ if (!is_null($events['events'])) {
 			if($text == "1")
 			{
 			$k = 0;
-			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue.'<br>';
-			$obj2 = $announce->item($k)->getElementsByTagName('intro')->item(0)->nodeValue;
+			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
 			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
 			$obj1_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
 			// Build message to reply back
@@ -33,7 +32,7 @@ if (!is_null($events['events'])) {
 				[
 				
     				'type' => 'text',
-    				'text' => $obj1.$obj2
+    				'text' => $obj1
 				
 				];
 			$messages2 = 
@@ -48,88 +47,105 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "2")
 			{
+			$k = 1;
+			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
+			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
+			$obj1_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
 			$messages = 
 				[
 				
     				'type' => 'text',
-    				'text' => '2.สถานที่ฝึกซ้อมย่อยและถ่ายรูปหมู่'
+    				'text' => $obj1
 				
 				];
 			$messages2 =
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/space1.jpg',
-    				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/space2.jpg'
+    				'originalContentUrl' => $obj1_1,
+    				'previewImageUrl' => $obj1_2
 				
 				];
 			}
 			else if($text == "3")
 			{
+			$k = 2;
+			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
+			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
+			$obj1_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
 			$messages = 
 				[
 				
     				'type' => 'text',
-    				'text' => '3.การแต่งกายของบัณฑิต'
+    				'text' => $obj1
 				
 				];
 			$messages2 =
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung1.jpg',
-    				'previewImageUrl' => 'https://www.picz.in.th/images/2017/11/27/jayjung2.jpg'
+    				'originalContentUrl' => $obj1_1,
+    				'previewImageUrl' => $obj1_2
 				
 				];
 			}
 			else if($text == "4")
 			{
+			$k = 3;
+			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
+			$obj1_1 = $announce->item($k)->getElementsByTagName('way')->item(0)->nodeValue;
 			$messages = 
 				[
 				
     				'type' => 'text',
-    				'text' => '4.ระบบภาวะการมีงานทำ'
+    				'text' => $obj1
 				
 				];
 			$messages2 =
 				[
 				
 				'type' => 'text',
-    				'text' => 'http://graduate.rmutsv.ac.th/2560/?q=th/studentwork'
+    				'text' => $obj1_1
 				
 				];
 			}
 			else if($text == "000")
 			{
+			$k = 4;
+			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
+			$obj1_1 = $announce->item($k)->getElementsByTagName('tel')->item(0)->nodeValue;
 			$messages = 
 				[
 				
     				'type' => 'text',
-    				'text' => 'ติดต่อเจ้าหน้าที่'
+    				'text' => $obj1
 				
 				];
 			$messages2 =
 				[
 				
 				'type' => 'text',
-    				'text' => 'โทร. 090-000-0000'
+    				'text' => $obj1_1
 				
 				];
 			}
 			else if($text == "?")
 			{
+			$k = 5;
+			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
+			$obj1_1 = $announce->item($k)->getElementsByTagName('deta')->item(0)->nodeValue;
 			$messages = 
 				[
 				
     				'type' => 'text',
-    				'text' => 'กรุณาพิมพ์ตัวเลขต่างๆ ที่ปรากฏด้านล่าง เพื่อสอบถามข้อมูลที่ท่านต้องการทราบ'
+    				'text' => $obj1
 				
 				];
 			$messages2 =
 				[
 				
 				'type' => 'text',
-    				'text' => '1=กำหนดการและสถานที่รายงานตัวฝึกซ้อมและวันรับปริญญาบัตร 2=สถานที่ฝึกซ้อมย่อยและถ่ายรูปหมู่ 3=การแต่งกายของบัณฑิต 4=ระบบภาวะการมีงานทำ 000=ติดต่อเจ้าหน้าที่'
+    				'text' => $obj1_1
 				
 				];
 			}
