@@ -7,6 +7,13 @@ $doc->validateOnParse = true;
 $doc->Load('graduate.xml');
 $announce = $doc->getElementsByTagName('graduate');
 
+$obj1 = $announce->item(0)->getElementsByTagName('title')->item(0)->nodeValue;
+$obj1_1 = $announce->item(0)->getElementsByTagName('pic1')->item(0)->nodeValue;
+$obj1_2 = $announce->item(0)->getElementsByTagName('pic2')->item(0)->nodeValue;
+$obj2 = $announce->item(1)->getElementsByTagName('title')->item(0)->nodeValue;
+$obj2_1 = $announce->item(1)->getElementsByTagName('pic1')->item(0)->nodeValue;
+$obj2_2 = $announce->item(1)->getElementsByTagName('pic2')->item(0)->nodeValue;
+
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -23,10 +30,6 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			if($text == "1")
 			{
-			$k = 0;
-			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
-			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
-			$obj1_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
 			// Build message to reply back
 			$messages = 
 				[
@@ -47,28 +50,19 @@ if (!is_null($events['events'])) {
 			}
 			else if($text == "2")
 			{
-			$doc = new DomDocument;
-			$doc->validateOnParse = true;
-			$doc->Load('graduate.xml');
-			$announce = $doc->getElementsByTagName('graduate');
-			$k = 1;
-			$obj1 = $announce->item($k)->getElementsByTagName('title')->item(0)->nodeValue;
-			$obj1_1 = $announce->item($k)->getElementsByTagName('pic1')->item(0)->nodeValue;
-			$obj1_2 = $announce->item($k)->getElementsByTagName('pic2')->item(0)->nodeValue;
-			// Build message to reply back
 			$messages = 
 				[
 				
     				'type' => 'text',
-    				'text' => $obj1
+    				'text' => $obj2
 				
 				];
 			$messages2 = 
 				[
 				
 				'type' => 'image',
-    				'originalContentUrl' => $obj1_1,
-    				'previewImageUrl' => $obj1_2
+    				'originalContentUrl' => $obj2_1,
+    				'previewImageUrl' => $obj2_2
 				
 				];
 				
