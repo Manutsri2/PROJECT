@@ -150,7 +150,7 @@ if (!is_null($events['events'])) {
 				[
 				
 				'type' => 'text',
-    				'text' => $obj1_1."\n".$obj1_2."\n".$obj1_3."\n".$obj1_4."\n".$obj1_5
+    				'text' => $obj1_1."\n".$obj1_2."\n".$obj1_3."\n".$obj1_4."\n\n".$obj1_5
 				
 				];
 			}
