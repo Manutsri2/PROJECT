@@ -174,19 +174,11 @@ if (!is_null($events['events'])) {
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
-			if ($message2 == null)
-			{
-				$data = [
+			$data = [
 					'replyToken' => $replyToken,
 					'messages' => [$messages],
 				];
-			}else
-				{
-				$data = [
-					'replyToken' => $replyToken,
-					'messages' => [$messages,$messages2],
-				];
-			}
+			
 				
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
