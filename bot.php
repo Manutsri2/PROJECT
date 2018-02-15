@@ -176,13 +176,13 @@ if (!is_null($events['events'])) {
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			if ($message2!="")
 			{
-				$data = [
+				$data1 = [
 					'replyToken' => $replyToken,
 					'messages' => [$messages,$messages2],
 				];
 			}else
 				{
-				$data = [
+				$data2 = [
 					'replyToken' => $replyToken,
 					'messages' => [$messages],
 				];
