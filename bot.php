@@ -163,13 +163,13 @@ if (!is_null($events['events'])) {
     				'text' => 'ไม่มีข้อมูลที่ท่านสอบถาม'
 				
 				];
-			/*$messages2 =
+			$messages2 =
 				[
 				 
 				'type' => 'text',
     				'text' => 'หากต้องการสอบถามข้อมูลอีกครั้งท่านสามารถพิมพ์ ?'
 				
-				];*/
+				];
 			}
 
 			// Make a POST Request to Messaging API to reply to sender
